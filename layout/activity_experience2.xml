@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Experience2">
+
+    <TextView
+        android:id="@+id/Experience2_tv_experience"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:text="Experience"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/Experience2_bt_return"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Experience2_bt_return"
+        android:layout_width="89dp"
+        android:layout_height="69dp"
+        android:text="Return"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Experience2_tv_addExperience"
+        android:layout_width="136dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="8dp"
+        android:text="Add Experience"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Experience2_tv_manageExperience"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Experience2_bt_return" />
+
+    <TextView
+        android:id="@+id/Experience2_tv_manageExperience"
+        android:layout_width="161dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="8dp"
+        android:text="Manage Experience"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Experience2_tv_addExperience"
+        app:layout_constraintTop_toBottomOf="@+id/Experience2_tv_experience" />
+
+    <TextView
+        android:id="@+id/Experience2_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:text="Title"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Experience2_tv_addExperience" />
+
+    <EditText
+        android:id="@+id/Experience2_et_editTitle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/Experience2_tv_title"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Experience2_bt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Confirm"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/Experience2_et_editContent"
+        android:layout_width="355dp"
+        android:layout_height="375dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="15dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/Experience2_bt_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

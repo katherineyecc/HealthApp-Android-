@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Experience">
+
+    <TextView
+        android:id="@+id/Experience_tv_experience"
+        android:layout_width="158dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="15dp"
+        android:text="Experience"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/Experience_bt_return"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/Experience_bt_return"
+    android:layout_width="89dp"
+    android:layout_height="69dp"
+    android:text="Return"
+    android:textSize="14sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/Experience_tv_addExperience"
+    android:layout_width="136dp"
+    android:layout_height="32dp"
+    android:layout_marginEnd="31dp"
+    android:layout_marginLeft="27dp"
+    android:layout_marginRight="31dp"
+    android:layout_marginStart="27dp"
+    android:layout_marginTop="8dp"
+    android:text="Add Experience"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toStartOf="@+id/Experience_tv_manageExperience"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/Experience_bt_return" />
+
+    <TextView
+        android:id="@+id/Experience_tv_manageExperience"
+        android:layout_width="164dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="8dp"
+        android:text="Manege Experience"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Experience_tv_addExperience"
+        app:layout_constraintTop_toBottomOf="@+id/Experience_tv_experience" />
+
+<ScrollView
+    android:id="@+id/Experience_sv_manageExperience"
+    android:layout_width="350dp"
+    android:layout_height="432dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="25dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/Experience_tv_addExperience">
+
+    <LinearLayout
+        android:id="@+id/Experience_ll_experienceTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

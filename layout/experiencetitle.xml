@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/et_manageexperience"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:id="@+id/MET_sv_manageExperienceItem"
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/MET_ll_manageExperienceTitle">
+        //android:layout_alignParentStart="false"
+        //android:layout_alignParentTop="false"
+
+        <LinearLayout
+            android:id="@+id/MET_ll_manageExperienceItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/MET_tv_manageExperienceContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/MET_ll_manageExperienceTitle"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical">
+        //android:layout_below="@+id/MET_sv_manageExperienceItem"
+
+
+        <TextView
+            android:id="@+id/MET_tv_manageExperienceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/MET_ll_shareTime"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        //android:layout_below="@+id/MET_sv_manageExperienceItem"
+
+
+        <TextView
+            android:id="@+id/MET_tv_shareTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MET_ll_remove"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/MET_sv_manageExperienceItem"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        tools:ignore="RtlCompat">
+
+        <Button
+            android:id="@+id/MET_bt_remove"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Remove"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

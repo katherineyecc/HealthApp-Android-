@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recipe2">
+
+    <TextView
+        android:id="@+id/Recipe2_tv_recipe"
+        android:layout_width="121dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="15dp"
+        android:text="Recipe"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/Recipe2_bt_return"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Recipe2_bt_return"
+        android:layout_width="89dp"
+        android:layout_height="69dp"
+        android:text="Return"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Recipe2_tv_addRecipe"
+        android:layout_width="136dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="8dp"
+        android:text="Add Recipe"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Recipe2_tv_manageRecipe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipe2_bt_return" />
+
+    <TextView
+        android:id="@+id/Recipe2_tv_manageRecipe"
+        android:layout_width="149dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="8dp"
+        android:text="Manage Recipe"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Recipe2_tv_addRecipe"
+        app:layout_constraintTop_toBottomOf="@+id/Recipe2_tv_recipe" />
+
+    <TextView
+        android:id="@+id/Recipe2_tv_breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:text="Breakfast"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipe2_tv_addRecipe" />
+
+    <ScrollView
+        android:id="@+id/Recipe2_sv_manageRecipe1"
+        android:layout_width="350dp"
+        android:layout_height="94dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipe2_tv_breakfast">
+
+        <LinearLayout
+            android:id="@+id/Recipe2_ll_foodItemLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/Recipe_tv_lunch"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:text="Lunch"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipe2_sv_manageRecipe1" />
+
+    <ScrollView
+        android:id="@+id/Recipe2_sv_manageRecipe2"
+        android:layout_width="350dp"
+        android:layout_height="94dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipe_tv_lunch">
+
+        <LinearLayout
+            android:id="@+id/Recipe2_ll_foodItemLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/Recipe2_tv_dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:text="Dinner"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipe2_sv_manageRecipe2" />
+
+    <ScrollView
+        android:id="@+id/Recipe2_sv_manageRecipe3"
+        android:layout_width="350dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/Recipe2_bt_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipe2_tv_dinner"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:id="@+id/Recipe2_ll_foodItemLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Recipe2_bt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Confirm"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Recipe2_tv_add2"
+        android:layout_width="55dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:text="Add+"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Recipe2_sv_manageRecipe2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipe2_sv_manageRecipe1" />
+
+    <TextView
+        android:id="@+id/Recipe2_tv_add3"
+        android:layout_width="55dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:text="Add+"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Recipe2_sv_manageRecipe3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipe2_sv_manageRecipe2" />
+
+    <TextView
+        android:id="@+id/Recipe2_tv_add1"
+        android:layout_width="55dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:text="Add+"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Recipe2_sv_manageRecipe1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipe2_tv_manageRecipe" />
+
+</android.support.constraint.ConstraintLayout>

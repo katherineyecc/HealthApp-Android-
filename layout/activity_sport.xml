@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sport">
+
+    <TextView
+        android:id="@+id/Sport_tv_manageSport"
+        android:layout_width="149dp"
+        android:layout_height="32dp"
+        android:text="Manage Sport"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Sport_tv_addSport"
+        app:layout_constraintTop_toBottomOf="@+id/Sport_tv_sport" />
+
+    <TextView
+        android:id="@+id/Sport_tv_addSport"
+        android:layout_width="136dp"
+        android:layout_height="32dp"
+        android:text="Add Sport"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="82dp"
+        app:layout_constraintEnd_toStartOf="@+id/Sport_tv_manageSport"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sport_bt_return" />
+
+    <TextView
+        android:id="@+id/Sport_tv_sport"
+        android:layout_width="121dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="15dp"
+        android:text="Sport"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/Sport_bt_return"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Sport_bt_return"
+        android:layout_width="89dp"
+        android:layout_height="69dp"
+        android:text="Return"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/Sport_tv_dailySport"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:text="Sport"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sport_tv_addSport" />
+
+    <ScrollView
+        android:id="@+id/Sport_sv_manageSport"
+        android:layout_width="350dp"
+        android:layout_height="94dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sport_tv_dailySport">
+
+        <LinearLayout
+            android:id="@+id/Sport_ll_sportItemLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/Sport_bt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Confirm"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Sport_tv_add"
+        android:layout_width="55dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:text="Add+"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Sport_sv_manageSport"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
